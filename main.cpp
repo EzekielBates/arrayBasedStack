@@ -3,8 +3,13 @@
 int main(){
     Stack stack(10);
 
-    for(int i = 0; i <= 10; ++i){
+    for(int i = 0; i < 10; ++i){
         stack.push(i);
+        stack.peek();
+    }
+    
+    for(int i = 0; i < 10; ++i){
+        stack.pop();
         stack.peek();
     }
 }
