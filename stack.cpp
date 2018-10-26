@@ -3,11 +3,14 @@
 
 Stack::Stack(int myCapacity){
     capacity = myCapacity;
-    stack = new int[capacity];
+    //stack = new int[capacity];
     size = 0;
+    for(int i = 0; i < capacity; ++i){
+        stack[i] = 0;
+    }
 }
 Stack::~Stack(){
-    delete[] stack;
+    //delete[] stack;
 }
 void Stack::push(int myInt){
     if(size < capacity){
@@ -19,9 +22,9 @@ void Stack::push(int myInt){
     }
 }
 void Stack::pop(){
-    stack[size] = NULL;
+    stack[size] = 0;
     size--;
 }
 int Stack::peek(){
-    return stack[size];
+    std::cout << stack[size] << std::endl;
 }

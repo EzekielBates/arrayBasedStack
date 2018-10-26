@@ -1,8 +1,8 @@
 class Stack{
     private:
-        int size;
+        int size = 0;
         int capacity;
-        int * stack;
+        int stack[10];
     public:
         Stack(int capacity);
         ~Stack();
